@@ -159,14 +159,13 @@ var rails_env = 'production';
             <!-- Project Title & Summary -->
             <div class="row">
               <div class="columns small-12 medium-9 medium-centered">     
-                <!-- Title -->  <h1 itemprop="name"> <script type="text/javascript">
-                console.log(this);
-                console.log($(this));
-    $.getJSON("text.json", function(data) {
-        $(this).append(data.p1);
-    });
-</script>
-</h1>
+                <!-- Title -->  <h1 id="h1" itemprop="name"> <script type="text/javascript">
+  
+                        $.getJSON("text.json", function(data) {
+                      $('#h1').append(data.p1);
+                  });
+              </script>
+              </h1>
                 <!-- SubTitle --><h4>18.2.2015</h4>
 
                   <!-- Summary -->      
