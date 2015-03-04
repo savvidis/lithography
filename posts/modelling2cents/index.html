@@ -64,6 +64,16 @@
     });
   </script>
 
+
+  <script type="text/javascript">
+  
+                    $.getJSON("text.json", function(data) {
+                      $('#h1').append(data.h1);
+                      $('#date').append(data.date);
+                       $('#p1').append(data.p1);
+                  });
+     </script>
+
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="../../netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
 
@@ -159,21 +169,13 @@ var rails_env = 'production';
             <!-- Project Title & Summary -->
             <div class="row">
               <div class="columns small-12 medium-9 medium-centered">     
-                <!-- Title -->  <h1 id="h1" itemprop="name"> <script type="text/javascript">
-  
-                        $.getJSON("text.json", function(data) {
-                      $('#h1').append(data.p1);
-                  });
-              </script>
-              </h1>
-                <!-- SubTitle --><h4>18.2.2015</h4>
+                <!-- Title -->  <h1 id="h1" itemprop="name"> </h1>
+                <!-- SubTitle --><h4 id="date"></h4>
 
                   <!-- Summary -->      
                   <div class="project-summary">
                     <meta itemprop="description" content="SUMMARY HERE NEED TO BE CHANGED!!!" />
-                    <p>What we are saying to the Eurogroup. However, looking the non-papers from the Eurogroup meetings,, except from time we are asking an increase in the limit of the commercial paper funding from ECB a return of the profits of the bonds that ECB bought in the peak of the crisis and the ability to use the 11 billion from the EFSF that normally should return to the creditors.  </p>
-                    <p><br></p>
-                    <p>In the same document, Mr. Varoufakis, outlined the plan of the Greek government. I came to look closely to the debt sustainability explanation and thought to look closer the analysis in order to stay in shape.</p>
+                    <p id="p1"></p>
                   </div>
                 </div>
               </div>
