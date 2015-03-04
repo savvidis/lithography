@@ -65,15 +65,7 @@
   </script>
 
 
-  <script type="text/javascript">
-  
-                    $.getJSON("text.json", function(data) {
-                      $('#h1').append(data.h1);
-                      $('#date').append(data.date);
-                       $('#p1').append(data.p1);
-                  });
-     </script>
-
+ 
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="../../netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
 
@@ -412,5 +404,13 @@ var rails_env = 'production';
 
 
             </body>
+ <script type="text/javascript">
+  
+                    $.getJSON("text.json", function(data) {
+                      $('#h1').append(data.h1);
+                      $('#date').append(data.date);
+                       $('#p1').append(data.p1);
+                  });
+     </script>
 
             </html>
